@@ -1,0 +1,26 @@
+{
+  "name": "javascript-workshops",
+  "version": "1.0.0",
+  "author": "John Paquette",
+  "description": "A series of JavaScript workshops for leveling up",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmpaquett89/workshops/tree/main/javascript"
+  },
+  "keywords": [
+    "javascript",
+    "workshop",
+    "unit",
+    "test"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.3.1",
+    "jest": "^29.3.1"
+  }
+}
