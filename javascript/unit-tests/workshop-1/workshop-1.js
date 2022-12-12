@@ -8,18 +8,12 @@
  * @param {Number} desiredAmount - the desired total balance amount
  * @returns {Number} the number of years
  */
-export const getTotalInvestmentYears = (
-  principalAmount,
-  interestRate,
-  taxRate,
-  desiredAmount
-) => {
+export const getTotalInvestmentYears = (principalAmount, interestRate, taxRate, desiredAmount) => {
   if (principalAmount === desiredAmount) {
     return 0;
   }
 
-  return (calculateTotalInvestmentYears =
-    (principalAmount, interestRate, taxRate, desiredAmount));
+  return (calculateTotalInvestmentYears = (principalAmount, interestRate, taxRate, desiredAmount));
 };
 
 /**
@@ -43,11 +37,7 @@ export const calculateTotalInvestmentYears = (
   while (netBalanceAmount < desiredAmount) {
     years++;
 
-    netBalanceAmount = getNetBalanceAmount(
-      netBalanceAmount,
-      interestRate,
-      taxRate
-    );
+    netBalanceAmount = getNetBalanceAmount(netBalanceAmount, interestRate, taxRate);
   }
 
   return years;
